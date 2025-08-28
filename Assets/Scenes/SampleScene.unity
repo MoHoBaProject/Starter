@@ -860,8 +860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 713292256}
-  forwardForce: 2000
-  sidewaysForce: 800
+  forwardForce: 1000
+  sidewaysForce: 2000
   upForce: 12
 --- !u!114 &713292258
 MonoBehaviour:
