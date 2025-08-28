@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+namespace camera
 {
-    
-    public Transform player;
-    public Vector3 offset;
-    
-    // Update is called once per frame
-    void Update()
+    public class FollowPlayer : MonoBehaviour
     {
-       transform.position = player.position +offset;
+    
+        public Transform player;
+        public Vector3 offset;
+    
+        // Update is called once per frame
+        void Update()
+        {
+            transform.position = player.position +offset;
+        }
     }
 }

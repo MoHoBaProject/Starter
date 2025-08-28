@@ -1,12 +1,18 @@
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
+namespace player
 {
-    private void OnCollisionEnter(Collision collisionInfo)
+    public class PlayerCollision : MonoBehaviour
     {
-        if (collisionInfo.collider.CompareTag($"Obstacle"))
+        public PlayerMovement movement;
+
+        private void OnCollisionEnter(Collision collisionInfo)
         {
-            Debug.Log(collisionInfo.collider.name);
+            if (collisionInfo.collider.CompareTag($"Obstacle"))
+            {
+                Debug.Log(collisionInfo.collider.name);
+                movement.enabled = false;
+            }
         }
     }
 }
